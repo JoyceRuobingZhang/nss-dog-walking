@@ -8,6 +8,6 @@ export const RegisteredPets = () => {
     for (const pet of pets) {
         petHTML += `<li>${pet.name}</li>`
     }
-    //removed a line to debug
+    petHTML += "</ul>"
     return petHTML
 }

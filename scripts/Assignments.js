@@ -6,6 +6,7 @@ const walkers = getWalkers()
 
 
 // Function whose responsibility is to find the walker assigned to a pet
+// 这个function的作用是：找到某个 specific pet 的 matching walker。
 const findWalker = (pet, walkers) => {
     let petWalker = null
 
@@ -18,6 +19,10 @@ const findWalker = (pet, walkers) => {
     return petWalker
 }
 
+
+/* 
+这个function的作用是：
+loop through pets, 用上面的function 找到每个pet的 matching walker(即currentPetWalker)。*/
 export const Assignments = () => {
     let assignmentHTML = ""
     assignmentHTML = "<ul>"
@@ -33,7 +38,7 @@ export const Assignments = () => {
         ` //corrected
     }
 
-    // remove assignmentHTML += "</ul>"     corrected
+    assignmentHTML += "</ul>"
 
     return assignmentHTML
 }
